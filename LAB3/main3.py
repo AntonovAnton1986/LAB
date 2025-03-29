@@ -38,6 +38,8 @@ def calculate_frequency(dict_: dict) -> dict:
     total_letters = sum(dict_.values())
     for letter, count in dict_.items():
         frequency[letter] = f"{count / total_letters:.2f}"
+    for letter, count in frequency.items():
+        print(f'{letter}: {count}')
     return frequency
 
 
